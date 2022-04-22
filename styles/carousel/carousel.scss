@@ -1,0 +1,40 @@
+.carousel {
+  overflow: hidden;
+  position: relative;
+
+  .carousel-container {
+    white-space: nowrap;
+    transition: transform 1.7s;
+
+    .carousel-item {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+
+      > img {
+        width: 100%;
+      }
+    }
+  }
+
+  .button {
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: red;
+    cursor: pointer;
+    border: none;
+  }
+
+  .button.prev {
+    left: 20px;
+    top: 50%;
+  }
+  .button.next {
+    right: 20px;
+    top: 50%;
+  }
+}
