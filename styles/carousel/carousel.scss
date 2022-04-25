@@ -7,7 +7,7 @@
     transition: transform 1.7s;
 
     .carousel-item {
-      display: inline-flex;
+      display: inline-block;
       align-items: center;
       justify-content: center;
       padding: 10px;
@@ -27,6 +27,12 @@
     background: red;
     cursor: pointer;
     border: none;
+    opacity: .6;
+    transition: opacity .3s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   .button.prev {
